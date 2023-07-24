@@ -122,9 +122,9 @@ console.log(10 % 2);
 console.log(2**4);
 
 //
-let y=5;
-console.log(++y)
-console.log(--y);
+//let y=5;
+//console.log(++y)
+//console.log(--y);
 
 //object literals
 const person ={
@@ -148,3 +148,114 @@ console.log(person)
 //
 person.hobbies.push('singing');
 console.log(person)
+
+//array of objects
+const users=[
+  {
+    name: 'person1',
+    age: 23,
+    email: 'p1@gmail.com'
+  },
+  {
+    name: 'person2',
+    age: 26,
+    email: 'p2@gmail.com'
+  },
+  {
+    name: 'person3',
+    age: 24,
+    email: 'p3@gmail.com'
+  }
+];
+
+console.log(users);
+console.log(typeof(users));
+console.log(typeof(age));
+console.table(users);
+
+// function
+function greet(namee){
+  console.log(`Hello ${namee}`)
+}
+greet('Ahmed');
+console.log(typeof(greet));
+
+// another func
+function Sum(a,b) {
+  return a+b
+}
+console.log(Sum(2,5));
+
+// arrow function
+const great=(name)=> {
+  console.log(`Hello ${name}`)
+
+}
+great('Adam');
+
+// Sum with arrow function
+const somme=(a,b) => a+b
+console.log(somme(12,13))
+
+//conditions
+// if/ else
+const y=10;
+if(y===10) {
+  console.log('y is 10');
+}
+else if(y>10) {
+  console.log('y is greater than 10')
+}
+else {
+  console.log('y is less than 10')
+};
+
+// switch
+let color;
+
+switch (color) {
+  case 'red':
+    console.log('color is red');
+    break;
+  case 'blue':
+    console.log('color is blue');
+    break;
+  
+  case 'yellow':
+    console.log('color is yellow');
+    break;
+
+  case 'black':
+    console.log('color is black');
+    break;
+
+  default:
+    console.log('color is white')
+    break;
+}
+
+//loops
+//for
+for (let i = 1; i <= 10; i++) {
+
+  console.log(`For loop number ${i}`);
+}
+
+// while
+let j=3;
+while (j<=10) {
+  
+  console.log(`while loop number: ${j}`);
+  j++;
+}
+
+// loop through arrays
+const numb= [22,55,66];
+
+for (let k = 0; k < numb.length; k++) {
+console.log(numb[k]*2)  ;
+}
+
+for (let x of numb) {
+console.log(x);  
+}
